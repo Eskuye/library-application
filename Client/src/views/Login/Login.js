@@ -1,7 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import Header from './Header';
-import './Login.css'
-import { data } from "./SiteData";
+import './Login.scss'
 import { useHistory } from "react-router";
 
 
@@ -11,12 +9,6 @@ function Login() {
 
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-
-    const signIn = () => {
-        if(email === data.user.email && password === data.user.password){
-            history.push("/MainPage");
-        }
-    }
 
 
     return (
@@ -28,7 +20,7 @@ function Login() {
                     <br></br>
                     <label>Password</label>
                     <input placeholder="password" type="password" onChange={(event) => setPassword(event.target.value)}></input>
-                    <button type="submit" onClick={signIn}>Submit</button>
+                    <button type="submit">Submit</button>
                 </form>
             </div> 
         </div>

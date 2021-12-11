@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './Sidebar.scss'
 
 function Sidebar() {
@@ -8,21 +9,21 @@ function Sidebar() {
             <div className="profile_image">
             </div>
             <div className="nav">
-                <a href="/MainPage/Dashboard">
+                <Link to="/main-page/dashboard">
                     <span>
                         Dashboard
                     </span>
-                </a>
-                <a href="/MainPage/Library">
+                </Link>
+                <Link to="/main-page/library">
                     <span >
                         Library
                     </span>
-                </a>
-                <a href="/MainPage/Timeline">
+                </Link>
+                <Link to="/main-page/timeline">
                     <span >
                         Timeline
                     </span>
-                </a>
+                </Link>
             </div>
         </div>
     )

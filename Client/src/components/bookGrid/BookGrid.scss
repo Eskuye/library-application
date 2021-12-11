@@ -1,0 +1,15 @@
+@import "../../global.scss";
+.book_grid{
+    width: 100%;
+    height: fit-content;
+    min-height: 9em;
+    background-color: $primaryColor;
+    text-align: center;
+    padding-bottom: 1em;
+
+
+    .image{
+        height: 6em;
+        background-color: gray;
+    }
+}

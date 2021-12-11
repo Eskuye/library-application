@@ -1,3 +1,12 @@
 .library {
   width: 100%;
+
+  .grid_container{
+    display: grid;
+    height: 25em;
+    overflow: hidden;
+    overflow-y: scroll;
+    grid-template-columns: 33% 33% 33%;
+    gap: 0.5em;
+  }
 }
